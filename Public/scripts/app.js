@@ -30,16 +30,14 @@ var user = {
 
 function getLocation (location) {
 	if (location) {
-		return location;
-	} else {
-		return 'Unknown'
-	}
+		return 'location: ' + location;
+	} 
 };
 
 var templateTwo = React.createElement ('div', {},
-	React.createElement ('h1', {}, user.name.toUpperCase()),
+	React.createElement ('h1', {}, user.name ? user.name : 'Anonymus'),
 	React.createElement ('p', {}, 'age: ', user.age),
-	React.createElement ('p', {}, 'location: ', getLocation(user.location)),
+	React.createElement ('p', {}, getLocation(user.location)),
 );
 
 var appRoot = document.getElementById('app');
