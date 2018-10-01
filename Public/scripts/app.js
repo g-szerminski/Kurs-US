@@ -25,7 +25,7 @@ var templateThree = React.createElement ('div', {},
 var user = {
 	title: 'Indension App',
 	name: 'Grześ',
-	age: '37',
+	age: '18',
 	location: 'Wrocław',
 	options: ['one', 'two']
 };
